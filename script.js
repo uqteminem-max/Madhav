@@ -1,13 +1,13 @@
 const pdfs = [
     {
-        name: "PDF 1",
-        description: "First Computer Science document",
-        file: "pdfs/paper-1.pdf"
+        name: "Arrays",
+        description: "Arrays practice",
+        file: "pdfs/24508.pdf"
     },
     {
-        name: "PDF 2",
-        description: "Second Computer Science document",
-        file: "pdfs/paper-2.pdf"
+        name: "cse notes",
+        description: " Computer Science document",
+        file: "pdfs/Copy of CYC01 NOTES.pdf"
     }
 ];
 
