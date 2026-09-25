@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -8,16 +10,38 @@
 
     <title>Madhav — Computer Science</title>
 
+
+    <!-- =========================
+         GOOGLE SEARCH CONSOLE
+         VERIFICATION
+    ========================== -->
+
+    <meta
+        name="google-site-verification"
+        content="Z7JVcVXh2NxwYOJliM_YJ573FRlTO6uUuJpPV9vIQXw"
+    >
+
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          INTRO SCREEN
     ========================== -->
 
-    <section id="introScreen" class="intro-screen">
+    <section
+        id="introScreen"
+        class="intro-screen"
+    >
+
+        <!-- INTRO VIDEO -->
 
         <video
             id="krishnaVideo"
@@ -26,11 +50,29 @@
             muted
             playsinline
         >
-            <source src="From Klickpin.com- Charming world culture moments for boards that feel current and this season for culture-rich mood bo-pin-id-1057923768729430995.mp4" type="video/mp4">
+
+            <!--
+                IMPORTANT:
+                Put your video in the same folder
+                as index.html and name it krishna.mp4
+            -->
+
+            <source
+                src="krishna.mp4"
+                type="video/mp4"
+            >
+
             Your browser does not support video.
+
         </video>
 
+
+        <!-- DARK VIDEO OVERLAY -->
+
         <div class="video-overlay"></div>
+
+
+        <!-- INTRO TEXT -->
 
         <div class="intro-content">
 
@@ -38,13 +80,20 @@
                 WELCOME
             </p>
 
-            <h1>MADHAV</h1>
+
+            <h1>
+                MADHAV
+            </h1>
+
 
             <p>
-                Knowledge • Code • Creation
+                Computer Science
             </p>
 
-            <button id="enterButton">
+
+            <button
+                id="enterButton"
+            >
                 ENTER MADHAV
             </button>
 
@@ -53,17 +102,27 @@
     </section>
 
 
+
     <!-- =========================
          MAIN WEBSITE
     ========================== -->
 
-    <main id="mainWebsite" class="hidden">
+    <main
+        id="mainWebsite"
+        class="hidden"
+    >
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
 
         <header class="navbar">
 
             <div class="logo">
                 MADHAV
             </div>
+
 
             <div class="subtitle">
                 Computer Science
@@ -72,7 +131,10 @@
         </header>
 
 
-        <!-- HERO -->
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section class="hero">
 
@@ -80,22 +142,25 @@
                 COMPUTER SCIENCE LIBRARY
             </p>
 
+
             <h2>
                 Learn.<br>
                 Build.<br>
                 Understand.
             </h2>
 
+
             <p class="hero-text">
-                Select a collection to explore your
-                computer science materials.
+                Explore your Computer Science
+                study materials and documents.
             </p>
 
         </section>
 
 
+
         <!-- =========================
-             CATEGORY SECTION
+             PDF LIBRARY
         ========================== -->
 
         <section class="library">
@@ -103,146 +168,48 @@
             <div class="section-heading">
 
                 <p class="eyebrow">
-                    EXPLORE
+                    YOUR MATERIALS
                 </p>
 
+
                 <h2>
-                    Choose your collection
+                    Choose a PDF
                 </h2>
 
             </div>
 
 
-            <div class="category-grid">
-
-                <button
-                    class="category-card"
-                    data-category="errors"
-                >
-
-                    <span class="number">
-                        01
-                    </span>
-
-                    <h3>
-                        Errors
-                    </h3>
-
-                    <p>
-                        Error-related notes,
-                        questions and resources.
-                    </p>
-
-                    <span class="arrow">
-                        →
-                    </span>
-
-                </button>
-
-
-                <button
-                    class="category-card"
-                    data-category="root"
-                >
-
-                    <span class="number">
-                        02
-                    </span>
-
-                    <h3>
-                        Root
-                    </h3>
-
-                    <p>
-                        Core computer science
-                        materials.
-                    </p>
-
-                    <span class="arrow">
-                        →
-                    </span>
-
-                </button>
-
-
-                <button
-                    class="category-card"
-                    data-category="new-files"
-                >
-
-                    <span class="number">
-                        03
-                    </span>
-
-                    <h3>
-                        New Files
-                    </h3>
-
-                    <p>
-                        Recently added study
-                        materials.
-                    </p>
-
-                    <span class="arrow">
-                        →
-                    </span>
-
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PDF SECTION
-        ========================== -->
-
-        <section
-            id="pdfSection"
-            class="pdf-section hidden"
-        >
-
-            <div class="pdf-header">
-
-                <button id="backButton">
-                    ← Back
-                </button>
-
-                <div>
-
-                    <p
-                        id="selectedCategory"
-                        class="eyebrow"
-                    ></p>
-
-                    <h2 id="categoryTitle">
-                        Files
-                    </h2>
-
-                </div>
-
-            </div>
-
+            <!--
+                JavaScript will automatically
+                put the two PDFs here.
+            -->
 
             <div
                 id="pdfList"
                 class="pdf-list"
             >
+
             </div>
 
         </section>
 
 
-        <!-- FOOTER -->
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
 
         <footer>
 
-            <h3>MADHAV</h3>
+            <h3>
+                MADHAV
+            </h3>
+
 
             <p>
                 A simple space for Computer Science.
             </p>
+
 
             <p class="copyright">
                 Made with ❤️
@@ -250,10 +217,18 @@
 
         </footer>
 
+
     </main>
 
 
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="script.js"></script>
 
+
 </body>
+
 </html>
