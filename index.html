@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Chitram</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chitram — Stories in Frames</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welcome to Chitram 📸</h1>
+    <!-- Nature Question Screen -->
+    <section id="welcomeScreen" class="welcome-screen">
 
-    <p>Share your photography with the world.</p>
+        <div class="welcome-content">
 
-    <button>Explore Photos</button>
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>Chitram</h1>
+
+            <p class="tagline">
+                Stories captured in frames.
+            </p>
+
+            <div class="nature-question">
+                <h2>Do you love nature?</h2>
+
+                <p>
+                    Come on, we already know the answer.
+                </p>
+
+                <div class="choice-buttons">
+
+                    <button onclick="enterGallery()">
+                        YES 🌿
+                    </button>
+
+                    <button onclick="enterGallery()">
+                        YESSSS 🌿✨
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <main id="galleryScreen" class="gallery-screen">
+
+        <header class="navbar">
+
+            <div class="logo">
+                Chitram<span>.</span>
+            </div>
+
+            <div class="nav-text">
+                Nature • Moments • Stories
+            </div>
+
+        </header>
+
+
+        <section class="gallery-intro">
+
+            <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+
+            <h2>Captured by me.</h2>
+
+            <p>
+                Every frame has a story.
+            </p>
+
+        </section>
+
+
+        <!-- Your photographs will appear here -->
+        <section id="gallery" class="gallery">
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                Made with 🌿 by Chitram
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
