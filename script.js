@@ -2,14 +2,20 @@ const pdfs = [
     {
         name: "Arrays",
         description: "Arrays practice",
-        file: "pdfs/24508.pdf"
+        file: "24508.pdf"
     },
+
     {
-        name: "cse notes",
-        description: " Computer Science document",
-        file: "pdfs/Copy of CYC01 NOTES.pdf"
+        name: "CSE Notes",
+        description: "Computer Science document",
+        file: "Copy%20of%20CYCO1%20NOTES.pdf"
     }
 ];
+
+
+// =========================
+// INTRO
+// =========================
 
 const introScreen = document.getElementById("introScreen");
 const mainWebsite = document.getElementById("mainWebsite");
@@ -17,22 +23,31 @@ const enterButton = document.getElementById("enterButton");
 const pdfList = document.getElementById("pdfList");
 
 
+// =========================
 // ENTER MADHAV
+// =========================
+
 enterButton.addEventListener("click", function () {
 
     introScreen.style.opacity = "0";
     introScreen.style.transition = "opacity 0.8s ease";
 
     setTimeout(function () {
+
         introScreen.classList.add("hidden");
         mainWebsite.classList.remove("hidden");
+
         window.scrollTo(0, 0);
+
     }, 800);
 
 });
 
 
-// SHOW THE TWO PDFs
+// =========================
+// SHOW PDFs
+// =========================
+
 pdfs.forEach(function (pdf) {
 
     const item = document.createElement("div");
@@ -41,8 +56,11 @@ pdfs.forEach(function (pdf) {
 
     item.innerHTML = `
         <div class="pdf-info">
+
             <h3>${pdf.name}</h3>
+
             <p>${pdf.description}</p>
+
         </div>
 
         <a
