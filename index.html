@@ -12,7 +12,10 @@
 
 <body>
 
-    <!-- Nature Question Screen -->
+    <!-- =========================
+         WELCOME SCREEN
+    ========================== -->
+
     <section id="welcomeScreen" class="welcome-screen">
 
         <div class="welcome-content">
@@ -26,6 +29,7 @@
             </p>
 
             <div class="nature-question">
+
                 <h2>Do you love nature?</h2>
 
                 <p>
@@ -34,15 +38,16 @@
 
                 <div class="choice-buttons">
 
-                    <button onclick="enterGallery()">
+                    <button type="button" onclick="enterGallery()">
                         YES 🌿
                     </button>
 
-                    <button onclick="enterGallery()">
+                    <button type="button" onclick="enterGallery()">
                         YESSSS 🌿✨
                     </button>
 
                 </div>
+
             </div>
 
         </div>
@@ -50,7 +55,10 @@
     </section>
 
 
-    <!-- Gallery -->
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
     <main id="galleryScreen" class="gallery-screen">
 
         <header class="navbar">
@@ -68,9 +76,13 @@
 
         <section class="gallery-intro">
 
-            <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+            <p class="eyebrow">
+                A COLLECTION OF MOMENTS
+            </p>
 
-            <h2>Captured by me.</h2>
+            <h2>
+                Captured by me.
+            </h2>
 
             <p>
                 Every frame has a story.
@@ -79,10 +91,9 @@
         </section>
 
 
-        <!-- Your photographs will appear here -->
-        <section id="gallery" class="gallery">
+        <!-- Images are inserted here by JavaScript -->
 
-        </section>
+        <section id="gallery" class="gallery"></section>
 
 
         <footer>
