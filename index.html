@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="google-site-verification" content="Z7JVcVXh2NxwYOJliM_YJ573FRlTO6uUuJpPV9vIQXw" />
+    <meta name="google-site-verification"
+          content="Z7JVcVXh2NxwYOJliM_YJ573FRlTO6uUuJpPV9vIQXw">
 
     <title>Chitram — Stories in Frames</title>
+
+    <meta name="description"
+          content="Chitram — stories captured in frames.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,95 +16,113 @@
 <body>
 
     <!-- =========================
-         WELCOME SCREEN
+         INTRO IMAGE
     ========================== -->
 
-    <section id="welcomeScreen" class="welcome-screen">
+    <section id="intro" class="intro">
 
-        <div class="welcome-content">
+        <img src="intro.jpg" alt="Chitram intro">
 
-            <p class="small-title">WELCOME TO</p>
-
-            <h1>Chitram</h1>
-
-            <p class="tagline">
-                Stories captured in frames.
-            </p>
-
-            <div class="nature-question">
-
-                <h2>Do you love nature?</h2>
-
-                <p>
-                    Come on, we already know the answer.
-                </p>
-
-                <div class="choice-buttons">
-
-                    <button type="button" onclick="enterGallery()">
-                        YES 🌿
-                    </button>
-
-                    <button type="button" onclick="enterGallery()">
-                        YESSSS 🌿✨
-                    </button>
-
-                </div>
-
-            </div>
-
+        <div class="intro-overlay">
+            <p>CHITRAM</p>
         </div>
 
     </section>
 
 
     <!-- =========================
-         GALLERY
+         READY SCREEN
     ========================== -->
 
-    <main id="galleryScreen" class="gallery-screen">
+    <section id="ready" class="ready">
 
-        <header class="navbar">
+        <p class="eyebrow">A NEW STORY BEGINS</p>
 
-            <div class="logo">
-                Chitram<span>.</span>
-            </div>
+        <h1>
+            Are you ready,<br>
+            <span>Parth?</span>
+        </h1>
 
-            <div class="nav-text">
-                Nature • Moments • Stories
-            </div>
+        <button onclick="enterGallery()">
+            YES, I'M READY 🌿
+        </button>
 
-        </header>
+    </section>
 
 
-        <section class="gallery-intro">
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
 
-            <p class="eyebrow">
-                A COLLECTION OF MOMENTS
+    <main id="main-content" class="main-content">
+
+        <section class="hero">
+
+            <p class="eyebrow">WELCOME TO</p>
+
+            <h1>Chitram</h1>
+
+            <p class="subtitle">
+                Stories captured in frames.
             </p>
 
-            <h2>
-                Captured by me.
-            </h2>
-
-            <p>
-                Every frame has a story.
+            <p class="question">
+                Do you love nature?
             </p>
+
+            <p class="small-text">
+                Come on, we already know the answer.
+            </p>
+
+            <div class="buttons">
+                <button>YES 🌿</button>
+                <button>YESSSS 🌿✨</button>
+            </div>
 
         </section>
 
 
-        <!-- Images are inserted here by JavaScript -->
+        <!-- GALLERY -->
 
-        <section id="gallery" class="gallery"></section>
+        <section class="gallery-section">
+
+            <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+
+            <h2>Captured by me.</h2>
+
+            <p class="gallery-intro">
+                Every frame has a story.
+            </p>
+
+            <section id="gallery" class="gallery"></section>
+
+        </section>
+
+
+        <!-- ABOUT ME -->
+
+        <section class="about-me">
+
+            <div class="about-content">
+
+                <p class="eyebrow">BEHIND THE FRAMES</p>
+
+                <h2>
+                    The person behind Chitram.
+                </h2>
+
+                <p>
+                    Every photograph is a moment I wanted to remember.
+                    Chitram is my little collection of those moments.
+                </p>
+
+            </div>
+
+        </section>
 
 
         <footer>
-
-            <p>
-                Made by Jyoti Ranjan Nayak❤️
-            </p>
-
+            Made with 🌿 by Chitram
         </footer>
 
     </main>
@@ -112,5 +131,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>
